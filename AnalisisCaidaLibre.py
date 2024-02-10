@@ -52,7 +52,7 @@ tracker.init(img,bbox)
 
 scale_setter = ScaleSetter(img)
 
-scale_cm_per_pixel = 0.027 # Select scale for pixel to cm (can be hard coded manually)
+scale_cm_per_pixel = scale_setter.set_scale() # Select scale for pixel to cm (can be hard coded manually)
 
 fig, axs = plt.subplots(3, 9, figsize=(15,30))
 axs = axs.flatten ()
